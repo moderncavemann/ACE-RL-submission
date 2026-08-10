@@ -1,0 +1,34 @@
+{
+  "completed_policy_seeds": [
+    560000,
+    560001,
+    560002,
+    560003,
+    560004,
+    560005,
+    560006,
+    560007,
+    560008,
+    560009
+  ],
+  "expected_policy_seeds": [
+    560000,
+    560001,
+    560002,
+    560003,
+    560004,
+    560005,
+    560006,
+    560007,
+    560008,
+    560009
+  ],
+  "failed_policy_seeds": [],
+  "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "mode": "formal",
+  "protocol_fingerprint": "a07a049ed698d0f12108e83c831a8860ad8c23369a522c5362f5b3065fe5246c",
+  "rows_sha256": "cd1787e71a4728b511f645dc324e6c2afc4b4a832cb05f438ed70e858edfed3b",
+  "status": "complete",
+  "summary_sha256": "dfd9cf0b1c0036e11233d826ee94a4368a19cee68d244835f6c0583b9f89e0e5",
+  "updated_at": "2026-08-10T08:37:55.030992+00:00"
+}

@@ -1,0 +1,1138 @@
+{
+  "aggregation": "evaluation paths averaged within policy seed; paired t interval across policy seeds",
+  "claim_boundary": "exploratory evidence for the frozen tested market, rule, horizon, and seeds",
+  "generated_at": "2026-08-10T08:37:55.028908+00:00",
+  "integrity": {
+    "all_evaluation_action_uniforms_equal": true,
+    "all_evaluation_paths_equal": true,
+    "all_policy_seeds_complete": true,
+    "all_training_action_uniforms_equal": true,
+    "all_training_paths_equal": true,
+    "completed_policy_seeds": [
+      560000,
+      560001,
+      560002,
+      560003,
+      560004,
+      560005,
+      560006,
+      560007,
+      560008,
+      560009
+    ],
+    "expected_policy_seeds": [
+      560000,
+      560001,
+      560002,
+      560003,
+      560004,
+      560005,
+      560006,
+      560007,
+      560008,
+      560009
+    ],
+    "failure_count": 0,
+    "no_seed_excluded": true,
+    "routing_disabled_every_step": true,
+    "zero_failures": true
+  },
+  "method_summary": {
+    "action_cost": {
+      "effective_half_spread": {
+        "ci_high": 7.004221802417179,
+        "ci_low": 6.028898197582821,
+        "mean": 6.51656,
+        "n": 10,
+        "se": 0.21558877206771848
+      },
+      "mean_abs_inventory": {
+        "ci_high": 11.131,
+        "ci_low": 11.131,
+        "mean": 11.131,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_action_entropy": {
+        "ci_high": 0.43515236476155084,
+        "ci_low": 0.1504272944984519,
+        "mean": 0.2927898296300014,
+        "n": 10,
+        "se": 0.0629365760970599
+      },
+      "mean_best_quote_tie_share": {
+        "ci_high": 0.7085232339452436,
+        "ci_low": 0.4201767660547561,
+        "mean": 0.5643499999999999,
+        "n": 10,
+        "se": 0.06373706186792387
+      },
+      "mean_cross_dealer_inventory_variance": {
+        "ci_high": 98.15454,
+        "ci_low": 98.15454,
+        "mean": 98.15454,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_fill_ratio": {
+        "ci_high": 1.0,
+        "ci_low": 1.0,
+        "mean": 1.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_pairwise_action_agreement": {
+        "ci_high": 0.9017701282480648,
+        "ci_low": 0.7211454273074906,
+        "mean": 0.8114577777777777,
+        "n": 10,
+        "se": 0.039925884381205624
+      },
+      "mean_per_dealer_financial_reward": {
+        "ci_high": 1110.6655859845418,
+        "ci_low": 915.6008647000881,
+        "mean": 1013.133225342315,
+        "n": 10,
+        "se": 43.11775448374312
+      },
+      "mean_per_dealer_gross_pnl": {
+        "ci_high": 1152.754365984542,
+        "ci_low": 957.6896447000881,
+        "mean": 1055.222005342315,
+        "n": 10,
+        "se": 43.11775448374312
+      },
+      "mean_per_dealer_inventory_penalty": {
+        "ci_high": 42.08878,
+        "ci_low": 42.08878,
+        "mean": 42.08878,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_quote_dispersion": {
+        "ci_high": 0.8508437082646518,
+        "ci_low": 0.18091142537741556,
+        "mean": 0.5158775668210337,
+        "n": 10,
+        "se": 0.14808405899364196
+      },
+      "mean_quoted_half_spread": {
+        "ci_high": 7.00454815932701,
+        "ci_low": 6.028451840672988,
+        "mean": 6.516499999999999,
+        "n": 10,
+        "se": 0.21575957529929776
+      },
+      "q_v": {
+        "ci_high": 0.31745952298769936,
+        "ci_low": -0.045479660949409195,
+        "mean": 0.13598993101914508,
+        "n": 10,
+        "se": 0.08022528380572691
+      },
+      "q_x": {
+        "ci_high": 0.07676133621613239,
+        "ci_low": 9.844188934408915e-05,
+        "mean": 0.03842988905273824,
+        "n": 10,
+        "se": 0.016945821027141535
+      },
+      "selectivity": {
+        "ci_high": 0.24569077056416144,
+        "ci_low": -0.05057068663134774,
+        "mean": 0.09756004196640684,
+        "n": 10,
+        "se": 0.0654866174172213
+      },
+      "total_customer_cost": {
+        "ci_high": 14008.443604834358,
+        "ci_low": 12057.79639516564,
+        "mean": 13033.119999999999,
+        "n": 10,
+        "se": 431.17754413543696
+      },
+      "total_volume": {
+        "ci_high": 2000.0,
+        "ci_low": 2000.0,
+        "mean": 2000.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "valid_audit_rate": {
+        "ci_high": 0.4411500000000001,
+        "ci_low": 0.44115,
+        "mean": 0.44115000000000004,
+        "n": 10,
+        "se": 1.850371707708594e-17
+      }
+    },
+    "always_on_actor": {
+      "effective_half_spread": {
+        "ci_high": 6.219980629388619,
+        "ci_low": 3.412234370611381,
+        "mean": 4.8161075,
+        "n": 10,
+        "se": 0.620633567368974
+      },
+      "mean_abs_inventory": {
+        "ci_high": 11.131,
+        "ci_low": 11.131,
+        "mean": 11.131,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_action_entropy": {
+        "ci_high": 0.22687752141723827,
+        "ci_low": 0.09526575576616193,
+        "mean": 0.1610716385917001,
+        "n": 10,
+        "se": 0.029091902221723323
+      },
+      "mean_best_quote_tie_share": {
+        "ci_high": 0.8371263090859979,
+        "ci_low": 0.6052436909140022,
+        "mean": 0.7211850000000001,
+        "n": 10,
+        "se": 0.051256104812554326
+      },
+      "mean_cross_dealer_inventory_variance": {
+        "ci_high": 98.15454,
+        "ci_low": 98.15454,
+        "mean": 98.15454,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_fill_ratio": {
+        "ci_high": 1.0,
+        "ci_low": 1.0,
+        "mean": 1.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_pairwise_action_agreement": {
+        "ci_high": 0.9383241576362522,
+        "ci_low": 0.8534825090304146,
+        "mean": 0.8959033333333334,
+        "n": 10,
+        "se": 0.018753680063182496
+      },
+      "mean_per_dealer_financial_reward": {
+        "ci_high": 953.8173513377474,
+        "ci_low": 392.2680990934114,
+        "mean": 673.0427252155794,
+        "n": 10,
+        "se": 124.12671358186027
+      },
+      "mean_per_dealer_gross_pnl": {
+        "ci_high": 995.9061313377473,
+        "ci_low": 434.3568790934115,
+        "mean": 715.1315052155794,
+        "n": 10,
+        "se": 124.12671358186024
+      },
+      "mean_per_dealer_inventory_penalty": {
+        "ci_high": 42.08878,
+        "ci_low": 42.08878,
+        "mean": 42.08878,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_quote_dispersion": {
+        "ci_high": 0.4158777280350563,
+        "ci_low": 0.16878131514953254,
+        "mean": 0.2923295215922944,
+        "n": 10,
+        "se": 0.05461901257416528
+      },
+      "mean_quoted_half_spread": {
+        "ci_high": 6.2236449357293395,
+        "ci_low": 3.412295064270662,
+        "mean": 4.817970000000001,
+        "n": 10,
+        "se": 0.6214301218962595
+      },
+      "q_v": {
+        "ci_high": 0.9974183657546629,
+        "ci_low": 0.9869703572311288,
+        "mean": 0.9921943614928959,
+        "n": 10,
+        "se": 0.0023094625383585496
+      },
+      "q_x": {
+        "ci_high": 0.997507791693729,
+        "ci_low": 0.981666483283021,
+        "mean": 0.989587137488375,
+        "n": 10,
+        "se": 0.003501615475399651
+      },
+      "selectivity": {
+        "ci_high": 0.010572016968175817,
+        "ci_low": -0.005357568959134501,
+        "mean": 0.0026072240045206586,
+        "n": 10,
+        "se": 0.003521128631147285
+      },
+      "total_customer_cost": {
+        "ci_high": 12439.961258777239,
+        "ci_low": 6824.468741222761,
+        "mean": 9632.215,
+        "n": 10,
+        "se": 1241.267134737948
+      },
+      "total_volume": {
+        "ci_high": 2000.0,
+        "ci_low": 2000.0,
+        "mean": 2000.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "valid_audit_rate": {
+        "ci_high": 0.4411500000000001,
+        "ci_low": 0.44115,
+        "mean": 0.44115000000000004,
+        "n": 10,
+        "se": 1.850371707708594e-17
+      }
+    },
+    "full_ace": {
+      "effective_half_spread": {
+        "ci_high": 6.840876812627684,
+        "ci_low": 5.782598187372319,
+        "mean": 6.311737500000001,
+        "n": 10,
+        "se": 0.23392542556484627
+      },
+      "mean_abs_inventory": {
+        "ci_high": 11.131,
+        "ci_low": 11.131,
+        "mean": 11.131,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_action_entropy": {
+        "ci_high": 0.44258838258351085,
+        "ci_low": 0.22818937595614508,
+        "mean": 0.33538887926982797,
+        "n": 10,
+        "se": 0.04739146919260959
+      },
+      "mean_best_quote_tie_share": {
+        "ci_high": 0.67027568302256,
+        "ci_low": 0.40196431697744006,
+        "mean": 0.53612,
+        "n": 10,
+        "se": 0.05930843634949602
+      },
+      "mean_cross_dealer_inventory_variance": {
+        "ci_high": 98.15454,
+        "ci_low": 98.15454,
+        "mean": 98.15454,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_fill_ratio": {
+        "ci_high": 1.0,
+        "ci_low": 1.0,
+        "mean": 1.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_pairwise_action_agreement": {
+        "ci_high": 0.8570033372482482,
+        "ci_low": 0.7143766627517518,
+        "mean": 0.78569,
+        "n": 10,
+        "se": 0.03152667429188688
+      },
+      "mean_per_dealer_financial_reward": {
+        "ci_high": 1077.9965879546432,
+        "ci_low": 866.3408625999779,
+        "mean": 972.1687252773106,
+        "n": 10,
+        "se": 46.785085180076365
+      },
+      "mean_per_dealer_gross_pnl": {
+        "ci_high": 1120.0853679546433,
+        "ci_low": 908.4296425999779,
+        "mean": 1014.2575052773107,
+        "n": 10,
+        "se": 46.78508518007635
+      },
+      "mean_per_dealer_inventory_penalty": {
+        "ci_high": 42.08878,
+        "ci_low": 42.08878,
+        "mean": 42.08878,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_quote_dispersion": {
+        "ci_high": 0.8795236921787113,
+        "ci_low": 0.4001002614084462,
+        "mean": 0.6398119767935787,
+        "n": 10,
+        "se": 0.105973348976628
+      },
+      "mean_quoted_half_spread": {
+        "ci_high": 6.842380554142771,
+        "ci_low": 5.7821594458572285,
+        "mean": 6.31227,
+        "n": 10,
+        "se": 0.23435479847160517
+      },
+      "q_v": {
+        "ci_high": 0.9959584268566776,
+        "ci_low": 0.9826247377209526,
+        "mean": 0.9892915822888151,
+        "n": 10,
+        "se": 0.0029473229742982047
+      },
+      "q_x": {
+        "ci_high": 0.6268558816515951,
+        "ci_low": 0.3524294615977881,
+        "mean": 0.4896426716246916,
+        "n": 10,
+        "se": 0.060660128217021894
+      },
+      "selectivity": {
+        "ci_high": 0.6341464953959782,
+        "ci_low": 0.36515132593226896,
+        "mean": 0.4996489106641236,
+        "n": 10,
+        "se": 0.059459586530439715
+      },
+      "total_customer_cost": {
+        "ci_high": 13681.753625255365,
+        "ci_low": 11565.196374744635,
+        "mean": 12623.475,
+        "n": 10,
+        "se": 467.85085112969256
+      },
+      "total_volume": {
+        "ci_high": 2000.0,
+        "ci_low": 2000.0,
+        "mean": 2000.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "valid_audit_rate": {
+        "ci_high": 0.4411500000000001,
+        "ci_low": 0.44115,
+        "mean": 0.44115000000000004,
+        "n": 10,
+        "se": 1.850371707708594e-17
+      }
+    },
+    "vanilla_ippo": {
+      "effective_half_spread": {
+        "ci_high": 6.965246836475615,
+        "ci_low": 6.626193163524386,
+        "mean": 6.79572,
+        "n": 10,
+        "se": 0.07494555105022727
+      },
+      "mean_abs_inventory": {
+        "ci_high": 11.131,
+        "ci_low": 11.131,
+        "mean": 11.131,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_action_entropy": {
+        "ci_high": 0.43630744665996307,
+        "ci_low": 0.0923868350038825,
+        "mean": 0.2643471408319228,
+        "n": 10,
+        "se": 0.07602135536164469
+      },
+      "mean_best_quote_tie_share": {
+        "ci_high": 0.754041446321024,
+        "ci_low": 0.439728553678976,
+        "mean": 0.596885,
+        "n": 10,
+        "se": 0.06947676672016975
+      },
+      "mean_cross_dealer_inventory_variance": {
+        "ci_high": 98.15454,
+        "ci_low": 98.15454,
+        "mean": 98.15454,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_fill_ratio": {
+        "ci_high": 1.0,
+        "ci_low": 1.0,
+        "mean": 1.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_pairwise_action_agreement": {
+        "ci_high": 0.9399034638104986,
+        "ci_low": 0.7230232028561681,
+        "mean": 0.8314633333333333,
+        "n": 10,
+        "se": 0.04793993389795105
+      },
+      "mean_per_dealer_financial_reward": {
+        "ci_high": 1102.8705927736753,
+        "ci_low": 1035.0598580972867,
+        "mean": 1068.965225435481,
+        "n": 10,
+        "se": 14.989110229086759
+      },
+      "mean_per_dealer_gross_pnl": {
+        "ci_high": 1144.9593727736753,
+        "ci_low": 1077.1486380972867,
+        "mean": 1111.054005435481,
+        "n": 10,
+        "se": 14.989110229086762
+      },
+      "mean_per_dealer_inventory_penalty": {
+        "ci_high": 42.08878,
+        "ci_low": 42.08878,
+        "mean": 42.08878,
+        "n": 10,
+        "se": 0.0
+      },
+      "mean_quote_dispersion": {
+        "ci_high": 0.5864982834105809,
+        "ci_low": 0.13130625519073413,
+        "mean": 0.3589022693006575,
+        "n": 10,
+        "se": 0.10061715919978928
+      },
+      "mean_quoted_half_spread": {
+        "ci_high": 6.965604713636172,
+        "ci_low": 6.626865286363828,
+        "mean": 6.796235,
+        "n": 10,
+        "se": 0.07487608914065956
+      },
+      "q_v": {
+        "ci_high": 0.0729350884099168,
+        "ci_low": 0.006399127055985533,
+        "mean": 0.039667107732951165,
+        "n": 10,
+        "se": 0.01470733009591761
+      },
+      "q_x": {
+        "ci_high": 0.04930580046702027,
+        "ci_low": 0.002007370312251365,
+        "mean": 0.025656585389635816,
+        "n": 10,
+        "se": 0.010455002244643878
+      },
+      "selectivity": {
+        "ci_high": 0.03356436482350413,
+        "ci_low": -0.00554332013687342,
+        "mean": 0.014010522343315356,
+        "n": 10,
+        "se": 0.008644492696812014
+      },
+      "total_customer_cost": {
+        "ci_high": 13930.493672951226,
+        "ci_low": 13252.38632704877,
+        "mean": 13591.439999999999,
+        "n": 10,
+        "se": 149.89110210045445
+      },
+      "total_volume": {
+        "ci_high": 2000.0,
+        "ci_low": 2000.0,
+        "mean": 2000.0,
+        "n": 10,
+        "se": 0.0
+      },
+      "valid_audit_rate": {
+        "ci_high": 0.4411500000000001,
+        "ci_low": 0.44115,
+        "mean": 0.44115000000000004,
+        "n": 10,
+        "se": 1.850371707708594e-17
+      }
+    }
+  },
+  "mode": "formal",
+  "paired_contrasts": {
+    "full_ace_minus_always_on_actor": {
+      "effective_half_spread": {
+        "sign_test": {
+          "negative": 3,
+          "non_ties": 10,
+          "p_value_two_sided": 0.34375,
+          "positive": 7,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 2.79757754189277,
+          "ci_low": 0.19368245810722962,
+          "mean": 1.4956299999999998,
+          "n": 10,
+          "se": 0.5755736259472901
+        }
+      },
+      "mean_abs_inventory": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_action_entropy": {
+        "sign_test": {
+          "negative": 1,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 9,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.27335433889343475,
+          "ci_low": 0.0752801424628209,
+          "mean": 0.17431724067812782,
+          "n": 10,
+          "se": 0.043782978875025164
+        }
+      },
+      "mean_best_quote_tie_share": {
+        "sign_test": {
+          "negative": 8,
+          "non_ties": 10,
+          "p_value_two_sided": 0.109375,
+          "positive": 2,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": -0.041982915532891046,
+          "ci_low": -0.32814708446710894,
+          "mean": -0.18506499999999998,
+          "n": 10,
+          "se": 0.06325467925159546
+        }
+      },
+      "mean_cross_dealer_inventory_variance": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_fill_ratio": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_pairwise_action_agreement": {
+        "sign_test": {
+          "negative": 9,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 1,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": -0.04577309652011988,
+          "ci_low": -0.1746535701465468,
+          "mean": -0.11021333333333334,
+          "n": 10,
+          "se": 0.028488168352437428
+        }
+      },
+      "mean_per_dealer_financial_reward": {
+        "sign_test": {
+          "negative": 3,
+          "non_ties": 10,
+          "p_value_two_sided": 0.34375,
+          "positive": 7,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 559.5155086858663,
+          "ci_low": 38.73649143759616,
+          "mean": 299.12600006173125,
+          "n": 10,
+          "se": 115.11472529802612
+        }
+      },
+      "mean_per_dealer_gross_pnl": {
+        "sign_test": {
+          "negative": 3,
+          "non_ties": 10,
+          "p_value_two_sided": 0.34375,
+          "positive": 7,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 559.5155086858663,
+          "ci_low": 38.7364914375961,
+          "mean": 299.1260000617312,
+          "n": 10,
+          "se": 115.11472529802613
+        }
+      },
+      "mean_per_dealer_inventory_penalty": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_quote_dispersion": {
+        "sign_test": {
+          "negative": 1,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 9,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.6189909920860883,
+          "ci_low": 0.07597391831648043,
+          "mean": 0.34748245520128435,
+          "n": 10,
+          "se": 0.12003029924173471
+        }
+      },
+      "mean_quoted_half_spread": {
+        "sign_test": {
+          "negative": 3,
+          "non_ties": 10,
+          "p_value_two_sided": 0.34375,
+          "positive": 7,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 2.7969226859391085,
+          "ci_low": 0.1916773140608914,
+          "mean": 1.4943,
+          "n": 10,
+          "se": 0.5758720981163168
+        }
+      },
+      "q_v": {
+        "sign_test": {
+          "negative": 5,
+          "non_ties": 10,
+          "p_value_two_sided": 1.0,
+          "positive": 5,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.006669349835556579,
+          "ci_low": -0.012474908243717883,
+          "mean": -0.002902779204080652,
+          "n": 10,
+          "se": 0.004231710450768007
+        }
+      },
+      "q_x": {
+        "sign_test": {
+          "negative": 10,
+          "non_ties": 10,
+          "p_value_two_sided": 0.001953125,
+          "positive": 0,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": -0.3573061809074052,
+          "ci_low": -0.6425827508199617,
+          "mean": -0.49994446586368346,
+          "n": 10,
+          "se": 0.06305848141303194
+        }
+      },
+      "selectivity": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 10,
+          "p_value_two_sided": 0.001953125,
+          "positive": 10,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.6357870321761321,
+          "ci_low": 0.3582963411430737,
+          "mean": 0.4970416866596029,
+          "n": 10,
+          "se": 0.06133746486141876
+        }
+      },
+      "total_customer_cost": {
+        "sign_test": {
+          "negative": 3,
+          "non_ties": 10,
+          "p_value_two_sided": 0.34375,
+          "positive": 7,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 5595.155083785541,
+          "ci_low": 387.36491621445975,
+          "mean": 2991.26,
+          "n": 10,
+          "se": 1151.1472518945802
+        }
+      },
+      "total_volume": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "valid_audit_rate": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      }
+    },
+    "full_ace_minus_vanilla_ippo": {
+      "effective_half_spread": {
+        "sign_test": {
+          "negative": 9,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 1,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.10653703499686779,
+          "ci_low": -1.0745020349968677,
+          "mean": -0.4839824999999999,
+          "n": 10,
+          "se": 0.26106080238588314
+        }
+      },
+      "mean_abs_inventory": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_action_entropy": {
+        "sign_test": {
+          "negative": 4,
+          "non_ties": 10,
+          "p_value_two_sided": 0.75390625,
+          "positive": 6,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.2651198631906436,
+          "ci_low": -0.12303638631483339,
+          "mean": 0.07104173843790511,
+          "n": 10,
+          "se": 0.08579934781288175
+        }
+      },
+      "mean_best_quote_tie_share": {
+        "sign_test": {
+          "negative": 6,
+          "non_ties": 10,
+          "p_value_two_sided": 0.75390625,
+          "positive": 4,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.12289510180359506,
+          "ci_low": -0.24442510180359503,
+          "mean": -0.06076499999999998,
+          "n": 10,
+          "se": 0.08119367895826483
+        }
+      },
+      "mean_cross_dealer_inventory_variance": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_fill_ratio": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_pairwise_action_agreement": {
+        "sign_test": {
+          "negative": 6,
+          "non_ties": 10,
+          "p_value_two_sided": 0.75390625,
+          "positive": 4,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.07858591960316201,
+          "ci_low": -0.1701325862698287,
+          "mean": -0.045773333333333346,
+          "n": 10,
+          "se": 0.054977565400749495
+        }
+      },
+      "mean_per_dealer_financial_reward": {
+        "sign_test": {
+          "negative": 9,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 1,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 21.307407026149747,
+          "ci_low": -214.90040734249072,
+          "mean": -96.79650015817049,
+          "n": 10,
+          "se": 52.2121605589391
+        }
+      },
+      "mean_per_dealer_gross_pnl": {
+        "sign_test": {
+          "negative": 9,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 1,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 21.307407026149804,
+          "ci_low": -214.9004073424906,
+          "mean": -96.7965001581704,
+          "n": 10,
+          "se": 52.21216055893908
+        }
+      },
+      "mean_per_dealer_inventory_penalty": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "mean_quote_dispersion": {
+        "sign_test": {
+          "negative": 3,
+          "non_ties": 10,
+          "p_value_two_sided": 0.34375,
+          "positive": 7,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.5632117252225838,
+          "ci_low": -0.0013923102367414675,
+          "mean": 0.28090970749292116,
+          "n": 10,
+          "se": 0.12480195301930266
+        }
+      },
+      "mean_quoted_half_spread": {
+        "sign_test": {
+          "negative": 9,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 1,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.10728563921233664,
+          "ci_low": -1.075215639212337,
+          "mean": -0.48396500000000026,
+          "n": 10,
+          "se": 0.2613840137985574
+        }
+      },
+      "q_v": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 10,
+          "p_value_two_sided": 0.001953125,
+          "positive": 10,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.9839151575771093,
+          "ci_low": 0.915333791534619,
+          "mean": 0.9496244745558642,
+          "n": 10,
+          "se": 0.015159453148207418
+        }
+      },
+      "q_x": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 10,
+          "p_value_two_sided": 0.001953125,
+          "positive": 10,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.601640542518932,
+          "ci_low": 0.32633162995117954,
+          "mean": 0.4639860862350558,
+          "n": 10,
+          "se": 0.060855197296143346
+        }
+      },
+      "selectivity": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 10,
+          "p_value_two_sided": 0.001953125,
+          "positive": 10,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 0.6238551601335593,
+          "ci_low": 0.347421616508057,
+          "mean": 0.4856383883208082,
+          "n": 10,
+          "se": 0.061103789483974894
+        }
+      },
+      "total_customer_cost": {
+        "sign_test": {
+          "negative": 9,
+          "non_ties": 10,
+          "p_value_two_sided": 0.021484375,
+          "positive": 1,
+          "ties": 0
+        },
+        "t_interval": {
+          "ci_high": 213.07406999373518,
+          "ci_low": -2149.004069993735,
+          "mean": -967.9649999999998,
+          "n": 10,
+          "se": 522.1216047717661
+        }
+      },
+      "total_volume": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      },
+      "valid_audit_rate": {
+        "sign_test": {
+          "negative": 0,
+          "non_ties": 0,
+          "p_value_two_sided": 1.0,
+          "positive": 0,
+          "ties": 10
+        },
+        "t_interval": {
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "mean": 0.0,
+          "n": 10,
+          "se": 0.0
+        }
+      }
+    }
+  },
+  "protocol_version": "abides_typed_audit_ippo_v2"
+}
