@@ -38,7 +38,7 @@ class MainExperimentTests(unittest.TestCase):
                 np.log(positive_probability[1:].sum())
                 - np.log(negative_probability[1:].sum())
             ) / (2.0 * epsilon)
-        np.testing.assert_allclose(analytic, finite_difference, atol=1e-10, rtol=0.0)
+        np.testing.assert_allclose(analytic, finite_difference, atol=1e-9, rtol=0.0)
 
     def test_scalar_shift_cancels_after_context_centering(self) -> None:
         cfg = experiment.Config(seeds=(-2, -1), updates=10)

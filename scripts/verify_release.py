@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Fail-closed structural and anonymity checks for this repository."""
+"""Fail-closed structural and integrity checks for this repository."""
 
 from __future__ import annotations
 
 import re
 import json
+import hashlib
 import math
 import subprocess
 from pathlib import Path
@@ -14,12 +15,20 @@ ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {
     ".gitignore",
     "README.md",
+    "README.zh-CN.md",
     "requirements.txt",
     "ace_rl_project/__init__.py",
     "ace_rl_project/envs/__init__.py",
     "ace_rl_project/envs/lob_env.py",
     "ace_rl_project/experiments/__init__.py",
     "ace_rl_project/experiments/config.py",
+    "assets/challenges.png",
+    "assets/controlled.png",
+    "assets/framework.png",
+    "assets/logo-dark.png",
+    "assets/logo.png",
+    "assets/robustness.png",
+    "assets/tendealer.png",
     "experiments/independent_context/PROTOCOL.md",
     "experiments/independent_context/run_main_experiment.py",
     "experiments/independent_context/run_critic_ablation.py",
@@ -33,6 +42,18 @@ ALLOWED = {
     "experiments/lob_contract/PROTOCOL.md",
     "experiments/lob_contract/run_experiment.py",
     "experiments/lob_contract/test_lob_contract.py",
+    "paper/data/fig4/panel_a.csv",
+    "paper/data/fig4/panel_b.csv",
+    "paper/data/fig4/panel_c.csv",
+    "paper/data/robustness.json",
+    "paper/data/training_history.csv",
+    "paper/extract_training_history.py",
+    "paper/fig4_data_sd.py",
+    "paper/plot_fig4.py",
+    "paper/plot_robustness.py",
+    "paper/plot_tendealer.py",
+    "paper/robustness.py",
+    "paper/table_stats.py",
     "revision/configs/abides_typed_audit_ippo_v2.json",
     "revision/experiments/outputs/abides_typed_audit_ippo_v2/formal/rows.json",
     "revision/experiments/outputs/abides_typed_audit_ippo_v2/formal/run_state.json",
@@ -53,6 +74,7 @@ ALLOWED = {
     "scripts/verify_release.py",
 }
 IGNORED_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache"}
+BINARY_SUFFIXES = {".png"}
 
 
 def tracked_files() -> set[str]:
@@ -77,11 +99,15 @@ if files != ALLOWED:
         f"missing={sorted(ALLOWED - files)} extra={sorted(files - ALLOWED)}"
     )
 
-readme_headings = re.findall(
-    r"^# (.+)$", (ROOT / "README.md").read_text(encoding="utf-8"), re.MULTILINE
-)
-if readme_headings != ["Environment", "Dependencies", "Run"]:
-    raise SystemExit(f"FAIL: unexpected README sections: {readme_headings}")
+link = re.compile(r'(?:href|src|srcset)="([^"]+)"|\]\(([^)\s]+)\)')
+for readme in ("README.md", "README.zh-CN.md"):
+    text = (ROOT / readme).read_text(encoding="utf-8")
+    for match in link.finditer(text):
+        target = (match.group(1) or match.group(2)).split("#", 1)[0]
+        if not target or re.match(r"[a-z]+:", target):
+            continue
+        if not (ROOT / target).exists():
+            raise SystemExit(f"FAIL: broken link in {readme}: {target}")
 
 forbidden = (
     "State" + "-Aligned",
@@ -91,6 +117,8 @@ forbidden = (
 absolute_markers = ("/" + "Users/", "/" + "home/", ":\\" + "Users\\")
 email = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 for relative in sorted(files):
+    if Path(relative).suffix in BINARY_SUFFIXES:
+        continue
     text = (ROOT / relative).read_text(encoding="utf-8")
     if any(marker in text for marker in absolute_markers):
         raise SystemExit(f"FAIL: absolute user path in {relative}")
@@ -148,6 +176,15 @@ close(
     "Full gross PnL",
 )
 
+config = json.loads(
+    (ROOT / "revision" / "configs" / "abides_typed_audit_ippo_v2.json").read_text(
+        encoding="utf-8"
+    )
+)
+protocol_hash = hashlib.sha256((ROOT / config["protocol_file"]).read_bytes()).hexdigest()
+if protocol_hash != config["protocol_file_sha256"]:
+    raise SystemExit(f"FAIL: frozen protocol changed: {config['protocol_file']}")
+
 git_dir = ROOT / ".git"
 if git_dir.is_dir():
     def git(*args: str) -> str:
@@ -156,13 +193,8 @@ if git_dir.is_dir():
         ).strip()
 
     if git("branch", "--show-current") != "main":
-        raise SystemExit("FAIL: anonymous repository branch must be main")
-    if git("tag", "--list"):
-        raise SystemExit("FAIL: anonymous repository must not contain tags")
-    identities = set(git("log", "--format=%an <%ae>").splitlines())
-    if identities != {"Anonymous Authors <anonymous@invalid>"}:
-        raise SystemExit(f"FAIL: non-anonymous commit identity: {sorted(identities)}")
+        raise SystemExit("FAIL: release branch must be main")
     if git("status", "--porcelain"):
-        raise SystemExit("FAIL: anonymous repository has uncommitted changes")
+        raise SystemExit("FAIL: repository has uncommitted changes")
 
-print(f"PASS: {len(files)} allowlisted files; anonymity checks passed")
+print(f"PASS: {len(files)} allowlisted files; release checks passed")

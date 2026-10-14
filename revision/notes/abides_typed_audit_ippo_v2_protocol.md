@@ -1,6 +1,6 @@
 # ABIDES typed-audit IPPO v2 protocol
 
-Date frozen: 2026-08-10
+Date frozen: 2026-08-10  
 Status: frozen before v2 engineering smoke and scientific outcome inspection
 
 ## Version rationale and claim boundary
